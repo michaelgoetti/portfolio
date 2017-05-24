@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Portfolio - Michael Goetti</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" type="text/css" href="styles/style.css"></style>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+</head>
+<body>
+	<link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://getbootstrap.com/examples/navbar-fixed-top/navbar-fixed-top.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+
+	<div class="main-container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Michael Goetti</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav pull-right">
+            <li><a class="scroll" href="#about">About</a></li>
+            <li><a class="scroll" href="#portfolio">Portfolio</a></li>
+            <li><a class="scroll" href="#contact">Contact</a></li>  
+          </ul>  
+      	</div>
+    </nav>
+    	<a id="about" class="anchor-top"></a>
+    <div class="about-container">
+      <p class="text-center section-header">About
+      </p>
+      <p class="text-center body-text">Front-End Developer with Back-End experience; devoted to elegant code and beautiful, powerful results.
+      </p>
+      <img src="https://res.cloudinary.com/mgoetti/image/upload/v1492795037/me-beach_rjojcw.png" />
+      <p class="text-center tech-logos">
+      	<img src="images/HTML5.svg" class="logo" id="html"/>
+      	<img src="images/CSS3.svg" class="logo" id="css" />
+      	<img src="images/JS.svg" class="logo" id="js" />
+      	<img src="images/MongoDB.svg" class="logo" id="mongo" />
+      	<img src="images/Node.svg" class="logo" id="node" />
+      	<img src="images/react.svg" class="logo" id="react" />      	
+      	     	</p>
+    </div>
+    	<a id="portfolio" class="anchor"></a>
+	  <div class="portfolio-container">
+	    <p class="text-center section-header">
+	      Portfolio
+	    </p>
+	    <a href="https://michaelgoetti.github.io/WeatherApp/" target="_blank">
+	    	<img class="portfolio-img img-responsive" src="images/wa_thumb.jpg" />
+	    </a>
+	  </div>
+      <a id="contact" class="anchor"></a>
+	  <div class="contact-container">
+	    <p class="text-center section-header">
+	    	Contact
+	    </p>
+	    <div class="container">
+	    	<div class="row">
+	    		<div class="col-md-6 col-sm-6">
+				    <form>
+					  <div class="form-group">
+					    <label class="form-label" for="formGroupExampleInput">First Name</label>
+					    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John">
+					  </div>
+					  <div class="form-group">
+					    <label class="form-label" for="formGroupExampleInput2">Last Name</label>
+					    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Smith">
+					  </div>
+      		  <div class="form-group">
+					    <label class="form-label" for="formGroupExampleInput3">Email</label>
+					    <input type="email" class="form-control" id="formGroupExampleInput3" placeholder="john.smith@email.com">
+					  </div>
+	          <div class="form-group">
+			  			<label class="form-label" for="comment">Comment</label>
+			  			<textarea class="form-control" rows="5" id="comment" placeholder="Enter your comments here."></textarea>
+					  </div>  
+					  <button type="submit" class="btn btn-primary btn-lg pull-right">Submit</button>
+					</form>
+				</div>
+	      <br /><br /><br />
+				<div class="col-md-6 col-sm-6">
+					<p class="contact-text">
+					Fill out your info in the form provided or contact me via the below links!
+					</p>
+					<p>
+						<ul class="social-list text-center">
+							<li>
+								<a class="button social" href='https://www.github.com/in/dummy'>
+									<i class="fa fa-github" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a class="button social" href='https://www.linkedin.com/in/dummy'>
+									<i class="fa fa-linkedin" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a class="button social" href='https://www.twitter.com/in/dummy'>
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a class="button social" href='https://www.flickr.com/in/dummy'>
+									<i class="fa fa-flickr" aria-hidden="true"></i>
+								</a>
+							</li>
+						</ul>
+					</p>
+			 	</div>
+				</div>	
+			</div>
+	  </div>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+<script src="script/script.js"></script>
+
+  <!-- 
+		<div class="container">
+			<div class"thumbnails>
+				<a href="https://michaelgoetti.github.io/WeatherApp/">
+					<img src="wa_thumb.jpg" />
+				</a>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="script.js"></script> -->
+	</body>
+</html>
