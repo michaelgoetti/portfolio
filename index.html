@@ -61,9 +61,38 @@
 	    <a href="https://michaelgoetti.github.io/WeatherApp/" target="_blank">
 	    	<img class="portfolio-img img-responsive" src="images/wa_thumb.jpg" />
 	    </a>
+	    <p class='pf-blurb'>
+	    	Weather forecast application using the Dark Sky weather API, coded in Javascript/JQuery.  Provides localized current weather, as well as a 5-day forecast.
+	    	<br /><br />
+	   	</p>
 	    <a href="https://michaelgoetti.github.io/wikipedia_viewer/" target="_blank">
 	    	<img class="portfolio-img img-responsive" src="images/wiki.jpg" />
 	    </a>
+	    <p class='pf-blurb'>
+	    	Wikipedia search application using the Wikipedia API, coded in Javascript/JQuery.  Returns search results in a formatted list linking to specific articles.
+	    	<br /><br />
+	   	</p>
+	    <a href="https://michaelgoetti.github.io/Pomodoro/" target="_blank">
+	    	<img class="portfolio-img img-responsive" src="images/pomodoro.jpg" />
+	    </a>
+	    <p class='pf-blurb'>
+	    	Pomodoro timer application coded in Javascript/JQuery.  Allows setting of work-session and break timers.
+	    	<br /><br />
+	   	</p>
+	    <a href="https://michaelgoetti.github.io/JSCalculator/" target="_blank">
+	    	<img class="portfolio-img img-responsive" src="images/jscalculator.jpg" />
+	    </a>
+	    <p class='pf-blurb'>
+	    	Calculator application coded in ReactJS.  Performs true order-of-operations calculations.
+	    	<br /><br />
+	    </p>
+	    <a href="https://michaelgoetti.github.io/twitch_viewer/" target="_blank">
+	    	<img class="portfolio-img img-responsive" src="images/twitch_viewer.jpg" />
+	    </a>
+	    <p class='pf-blurb'>
+	    	Twitch-feed aggregator application using the Twitch API, coded in Javascript/JQuery.  Entries link directly to live stream of online users.
+	    	<br /><br />
+	    </p>
 	  </div>
       <a id="contact" class="anchor"></a>
 	  <div class="contact-container">
@@ -73,55 +102,36 @@
 	    <div class="container">
 	    	<div class="row">
 	    		<div class="col-md-6 col-sm-6">
-				    <form>
+				    <form id="contact-form" action="//formspree.io/mpgoetti@gmail.com" method="post">
 					  <div class="form-group">
 					    <label class="form-label" for="formGroupExampleInput">First Name</label>
-					    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John">
+					    <input name="fname" type="text" class="form-control" id="formGroupExampleInput" placeholder="John">
 					  </div>
 					  <div class="form-group">
 					    <label class="form-label" for="formGroupExampleInput2">Last Name</label>
-					    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Smith">
+					    <input name="lname" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Smith">
 					  </div>
       		  <div class="form-group">
 					    <label class="form-label" for="formGroupExampleInput3">Email</label>
-					    <input type="email" class="form-control" id="formGroupExampleInput3" placeholder="john.smith@email.com">
+					    <input name="_replyto" type="email" class="form-control" id="formGroupExampleInput3" placeholder="john.smith@email.com">
 					  </div>
 	          <div class="form-group">
 			  			<label class="form-label" for="comment">Comment</label>
-			  			<textarea class="form-control" rows="5" id="comment" placeholder="Enter your comments here."></textarea>
-					  </div>  
-					  <button type="submit" class="btn btn-primary btn-lg pull-right">Submit</button>
+			  			<textarea name="message" class="form-control" rows="5" id="comment" placeholder="Enter your comments here."></textarea>
+			  			<input type="hidden" name="_subject" value="New submission from portfolio" />
+			  			<input type="hidden" name="_format" value="plain" />
+					  </div>
+					  <input class="pull-right btn btn-primary btn-lg" type="submit" value="Send">  
+					  <!-- <button type="submit" id="submit-btn" class="btn btn-primary btn-lg pull-right">Submit</button> -->
 					</form>
 				</div>
-	      <br /><br /><br />
-				<div class="col-md-6 col-sm-6">
+	      		
+				<div class="col-md-6 col-sm-6 contact">
 					<p class="contact-text">
-					Fill out your info in the form provided or contact me via the below links!
+					Fill out your info in the form provided or contact me via 
+					<a href="https://www.linkedin.com/in/michael-goetti-1397824/" target="_blank">LinkedIn</a> !
 					</p>
-					<p>
-						<ul class="social-list text-center">
-							<li>
-								<a class="button social" href='https://www.github.com/in/dummy'>
-									<i class="fa fa-github" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a class="button social" href='https://www.linkedin.com/in/dummy'>
-									<i class="fa fa-linkedin" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a class="button social" href='https://www.twitter.com/in/dummy'>
-									<i class="fa fa-twitter" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a class="button social" href='https://www.flickr.com/in/dummy'>
-									<i class="fa fa-flickr" aria-hidden="true"></i>
-								</a>
-							</li>
-						</ul>
-					</p>
+					
 			 	</div>
 				</div>	
 			</div>
@@ -131,16 +141,6 @@
 <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
 <script src="script/script.js"></script>
 
-  <!-- 
-		<div class="container">
-			<div class"thumbnails>
-				<a href="https://michaelgoetti.github.io/WeatherApp/">
-					<img src="wa_thumb.jpg" />
-				</a>
-			</div>
-		</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-		<script src="script.js"></script> -->
+  
 	</body>
 </html>
