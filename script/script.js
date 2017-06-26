@@ -27,7 +27,7 @@ var $contactForm = $('#contact-form');
 $contactForm.submit(function(e) {
   e.preventDefault();
   $.ajax({
-    url: '//formspree.io/mpgoetti@gmail.com',
+    url: '//formspree.io/' + emName + '@' + emDomain,
     method: 'POST',
     data: $(this).serialize(),
     dataType: 'json',
